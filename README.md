@@ -1,5 +1,5 @@
 # INTRODUCTION
-This is a repository of automated tests for the linio and utest website.
+This is a repository of automated and manual tests for websites, in this case Papa John's
 
 # PREREQUISITES 📋
 • Java version 1.8 update 151 or higher and JDK (environment variables set).
