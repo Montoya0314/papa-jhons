@@ -11,7 +11,7 @@
    @checkingCities
    Scenario: Matching list of cities available
      Given The user is on the page
-     When The user click on the locations link
+     When The user select location link
      Then The user validates the list of cities
 
   @selectACity

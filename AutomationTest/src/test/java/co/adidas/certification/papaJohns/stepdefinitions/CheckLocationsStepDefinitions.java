@@ -46,6 +46,11 @@ public class CheckLocationsStepDefinitions {
                 Matchers.equalTo(args)).orComplainWith(ErrorException.class, "Phone doesn't match"));
     }
 
+    @When("^The user select location link$")
+    public void theUserSelectLocationLink() {
+        OnStage.theActorInTheSpotlight().attemptsTo(CheckCitiesList.followingTheInstructions());
+    }
+
     @When("^The user click on the locations link$")
     public void theUserClickOnTheLocationsLink() {
         OnStage.theActorInTheSpotlight().attemptsTo(SelectTheLocationLink.followingTheInstructions());
@@ -65,5 +70,6 @@ public class CheckLocationsStepDefinitions {
     public void theUserValidatesTheListOfCities() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateCitiesList.locationCities(), Matchers.equalTo(new Cities().getCities())).orComplainWith(ErrorException.class, "List doesn't match"));
     }
+
 
 }
