@@ -1,6 +1,3 @@
-# Papa Jhons
-???
-
 # INTRODUCTION
 This is a repository of automated tests for the linio and utest website.
 
